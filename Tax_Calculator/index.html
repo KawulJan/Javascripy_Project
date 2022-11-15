@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body onload="Years();">
+    <h1>Tax Calculate Forms</h1>
+    <form action="#" id="Tax_form">
+        <label for="carType" id="">Select Car Type </label>
+        <select name="" id="carType" size="2"> //siz="2"
+            <option value="motor">Motobyik</option>
+            <option value="car">Car</option>
+        </select>
+        <label for="carPawer">Select Car Power </label>
+        <span>
+            <input type="radio" name="carPawer" id="selec1" value="999cc">
+            <label for="selec1" >less 999 cc </label>
+            <input type="radio" name="carPawer" id="selec2" value="1000~1600cc">
+            <label for="selec1" >1000~1600 cc </label>
+            <input type="radio" name="carPawer" id="selec3" value="16001~2000cc">
+            <label for="selec1" >16001~2000 cc </label>
+            <input type="radio" name="carPawer" id="selec4" value="over 2001cc">
+            <label for="selec1" >over 2001 cc </label>
+        </span>
+        <label for="carModel" >Cars Model </label>
+        <select name="" id="carYear" style="width: 100px;"> 
+            <option value="defualt">Select Year</option>
+        </select>
+        <input type="button" value="Tax Calculator" onclick="taxCalculator();">
+    </form>
+    <h5 id="result"></h5>
+</body>
+</html>
